@@ -42,7 +42,7 @@ export class AuthService extends BaseApiService {
       email, role: isAdmin ? 'admin' : 'student',
       apiCallsUsed: 3, apiCallsLimit: 20
     });
-    const fakeToken = new AuthToken('eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZSI6InVzZXIiLCJleHAiOjk5OTk5OTk5OTl9.mock');
+    const fakeToken = new AuthToken('eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZSI6InVzZXIiLCJleHAiOjk5OTk5OTk5OTl9.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c');
     fakeToken.save();
     this._saveUser(user);
     return { user, token: fakeToken };
